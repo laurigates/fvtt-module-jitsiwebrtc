@@ -600,6 +600,7 @@ class JitsiRTCClient extends AVClient {
 
     // Set our jitsi username to our FVTT user ID
     this._jitsiConference.setDisplayName(game.user.id);
+    this._jitsiConference.setSenderVideoConstraint(720);
 
     // Set up jitsi event handles
     this._jitsiConference.on(
